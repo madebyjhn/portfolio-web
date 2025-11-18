@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import { skills } from '@/lib/data';
+import Image from "next/image";
+import { skills } from "@/lib/data";
 
 export default function About() {
   return (
@@ -10,7 +10,8 @@ export default function About() {
             À propos
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Développeur web passionné par la création d'expériences digitales modernes
+            Développeur web passionné par la création d'expériences digitales
+            modernes
           </p>
         </div>
 
@@ -33,20 +34,21 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
               <p>
-                Passionné par le développement web depuis plusieurs années, je me
-                spécialise dans la création de sites vitrines modernes et performants
-                pour les entrepreneurs et petites entreprises.
+                Passionné par le développement web depuis plusieurs années, je
+                me spécialise dans la création de sites vitrines modernes et
+                performants pour les entrepreneurs et petites entreprises.
               </p>
               <p>
-                Mon objectif est de transformer vos idées en réalité digitale avec
-                des sites web qui allient esthétique moderne et performance optimale.
-                J'utilise les dernières technologies comme Next.js et Tailwind CSS
-                pour garantir des résultats professionnels.
+                Mon objectif est de transformer vos idées en réalité digitale
+                avec des sites web qui allient esthétique moderne et performance
+                optimale. J'utilise les dernières technologies comme Next.js et
+                Tailwind CSS pour garantir des résultats professionnels.
               </p>
               <p>
-                Que ce soit pour créer un nouveau site, moderniser votre présence en
-                ligne ou assurer la maintenance de votre site existant, je suis là
-                pour vous accompagner dans votre réussite digitale.
+                Que ce soit pour créer un nouveau site, moderniser votre
+                présence en ligne ou assurer la maintenance de votre site
+                existant, je suis là pour vous accompagner dans votre réussite
+                digitale.
               </p>
             </div>
           </div>
@@ -80,16 +82,20 @@ export default function About() {
 
         <div className="mt-20 grid md:grid-cols-3 gap-8">
           <div className="p-8 rounded-2xl bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 text-center">
-            <div className="text-4xl font-bold text-cyan-500 mb-2">10+</div>
+            <div className="text-4xl font-bold text-cyan-500 mb-2">2</div>
             <p className="text-gray-600 dark:text-gray-400">Projets réalisés</p>
           </div>
           <div className="p-8 rounded-2xl bg-gradient-to-br from-blue-500/10 to-violet-500/10 border border-blue-500/20 text-center">
-            <div className="text-4xl font-bold text-blue-500 mb-2">100%</div>
-            <p className="text-gray-600 dark:text-gray-400">Clients satisfaits</p>
+            <div className="text-4xl font-bold text-blue-500 mb-2">-</div>
+            <p className="text-gray-600 dark:text-gray-400">
+              Clients satisfaits
+            </p>
           </div>
           <div className="p-8 rounded-2xl bg-gradient-to-br from-violet-500/10 to-cyan-500/10 border border-violet-500/20 text-center">
             <div className="text-4xl font-bold text-violet-500 mb-2">2+</div>
-            <p className="text-gray-600 dark:text-gray-400">Années d'expérience</p>
+            <p className="text-gray-600 dark:text-gray-400">
+              Années d'expérience
+            </p>
           </div>
         </div>
       </div>
