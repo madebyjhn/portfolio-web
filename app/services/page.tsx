@@ -1,5 +1,5 @@
-import { Layout, RefreshCw, Settings, Zap } from 'lucide-react';
-import { services } from '@/lib/data';
+import { Layout, RefreshCw, Settings, Zap } from "lucide-react";
+import { services } from "@/lib/data";
 
 const iconMap = {
   Layout,
@@ -21,13 +21,13 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="flex justify-center gap-8">
           {services.map((service, index) => {
             const Icon = iconMap[service.icon as keyof typeof iconMap];
             return (
               <div
                 key={index}
-                className="group p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-cyan-500 dark:hover:border-cyan-500 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-2"
+                className="max-w-md mx-auto group p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-cyan-500 dark:hover:border-cyan-500 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-2"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Icon className="w-7 h-7 text-white" />
@@ -48,7 +48,8 @@ export default function Services() {
             Prêt à lancer votre projet ?
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-            Discutons ensemble de vos besoins et créons quelque chose d'exceptionnel
+            Discutons ensemble de vos besoins et créons quelque chose
+            d'exceptionnel
           </p>
           <a
             href="/contact"

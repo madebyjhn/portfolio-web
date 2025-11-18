@@ -1,39 +1,39 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Mail, Linkedin, Send } from 'lucide-react';
+import { useState } from "react";
+import { Mail, Linkedin, Send } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>(
-    'idle'
-  );
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('loading');
+    setStatus("loading");
 
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-        method: 'POST',
+      const response = await fetch("https://formspree.io/f/mldzdkye", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        setStatus('success');
-        setFormData({ name: '', email: '', message: '' });
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
       } else {
-        setStatus('error');
+        setStatus("error");
       }
     } catch (error) {
-      setStatus('error');
+      setStatus("error");
     }
   };
 
@@ -123,11 +123,11 @@ export default function Contact() {
 
               <button
                 type="submit"
-                disabled={status === 'loading'}
+                disabled={status === "loading"}
                 className="w-full inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {status === 'loading' ? (
-                  'Envoi en cours...'
+                {status === "loading" ? (
+                  "Envoi en cours..."
                 ) : (
                   <>
                     Envoyer le message
@@ -136,7 +136,7 @@ export default function Contact() {
                 )}
               </button>
 
-              {status === 'success' && (
+              {status === "success" && (
                 <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-xl">
                   <p className="text-green-600 dark:text-green-400 text-center font-semibold">
                     Message envoyé avec succès ! Je vous répondrai rapidement.
@@ -144,7 +144,7 @@ export default function Contact() {
                 </div>
               )}
 
-              {status === 'error' && (
+              {status === "error" && (
                 <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-xl">
                   <p className="text-red-600 dark:text-red-400 text-center font-semibold">
                     Une erreur est survenue. Veuillez réessayer.
@@ -161,7 +161,7 @@ export default function Contact() {
               </h2>
               <div className="space-y-4">
                 <a
-                  href="mailto:contact@dev.com"
+                  href="mailto:jcinosi.web@gmail.com"
                   className="flex items-center p-4 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-cyan-500 dark:hover:border-cyan-500 transition-all group"
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
@@ -172,13 +172,13 @@ export default function Contact() {
                       Email
                     </p>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      contact@dev.com
+                      jcinosi.web@gmail.com
                     </p>
                   </div>
                 </a>
 
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/johan-cinosi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center p-4 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-cyan-500 dark:hover:border-cyan-500 transition-all group"
@@ -203,8 +203,8 @@ export default function Contact() {
                 Disponibilité
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Je réponds généralement sous 24-48h. N'hésitez pas à me contacter
-                pour discuter de votre projet !
+                Je réponds généralement sous 24-48h. N'hésitez pas à me
+                contacter pour discuter de votre projet !
               </p>
               <div className="flex items-center">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse mr-2"></div>

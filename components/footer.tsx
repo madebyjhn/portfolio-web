@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Github } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -11,14 +11,14 @@ export default function Footer() {
 
           <div className="flex items-center space-x-4">
             <a
-              href="mailto:contact@dev.com"
+              href="mailto:jcinosi.web@gmail.com"
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               aria-label="Email"
             >
               <Mail className="w-5 h-5 text-gray-600 dark:text-gray-400" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/johan-cinosi"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -27,7 +27,7 @@ export default function Footer() {
               <Linkedin className="w-5 h-5 text-gray-600 dark:text-gray-400" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/madebyjhn"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
