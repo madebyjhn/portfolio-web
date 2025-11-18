@@ -1,10 +1,16 @@
+import image1 from "/app/assets/image.png";
+import image2 from "/app/assets/image copy.png";
+import image3 from "/app/assets/image copy 2.png";
+import image4 from "/app/assets/image copy 3.png";
+import image5 from "/app/assets/image copy 4.png";
+import image6 from "/app/assets/image copy 5.png";
+
 export const projects = [
   {
     id: "studio-lumiere",
-    name: "Studio Photo Lumière",
+    name: "Luna Studio",
     description: "Site vitrine moderne pour un studio photo professionnel",
-    image:
-      "https://images.pexels.com/photos/1279107/pexels-photo-1279107.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: image1,
     tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
     category: "Site Vitrine",
     fullDescription:
@@ -16,32 +22,33 @@ export const projects = [
       "Design responsive adapté à tous les écrans",
       "Animations fluides et transitions",
     ],
-    screenshots: [
-      "https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/1174775/pexels-photo-1174775.jpeg?auto=compress&cs=tinysrgb&w=800",
-    ],
+    screenshots: [image2, image3],
   },
   {
     id: "novatech-landing",
-    name: "NovaTech Landing Page",
-    description: "Landing page dynamique pour une startup tech innovante",
-    image:
-      "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    tech: ["React", "Tailwind CSS", "TypeScript"],
+    name: "NovaTech",
+    description:
+      "Landing page moderne et dynamique pour une startup tech innovante",
+    image: image4,
+    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
     category: "Landing Page",
     fullDescription:
-      "Landing page moderne et performante pour une startup technologique. Design audacieux avec animations et sections interactives pour maximiser les conversions.",
+      "Landing page premium et ultra-moderne développée pour NovaTech, une startup technologique fictive. Le site intègre un design minimaliste avec touches de neumorphisme, animations fluides, et sections axées conversion. Le tout optimisé pour la performance, le SEO et la responsivité.",
+
     features: [
-      "Hero section avec animations captivantes",
-      "Sections interactives avec scroll reveal",
-      "Formulaire de newsletter intégré",
-      "Optimisé pour la conversion",
-      "Performance et SEO optimisés",
+      "Hero section immersive avec gradient text et animations",
+      "4 statistiques clés affichées avec mise en page moderne",
+      "Cartes de fonctionnalités en neumorphisme",
+      "Section avantages 'Why NovaTech' en layout deux colonnes",
+      "Illustrations et métriques visuelles intégrées",
+      "Section témoignages avec notes 5 étoiles",
+      "Bannière CTA dynamique avec boutons accentués",
+      "Navigation fixe avec menu mobile",
+      "Animations scroll-triggered (fade-in, slide, stagger)",
+      "Code modulaire avec App Router (Next.js 13)",
     ],
-    screenshots: [
-      "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=800",
-    ],
+
+    screenshots: [image5, image6],
   },
 ];
 
